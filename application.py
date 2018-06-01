@@ -16,7 +16,7 @@ def index():
     return render_template("index.html", dato=df['Nombre'])
 #@app.route('/<string:name>')
 #def hello(name):
-#    return "<h1>Tu elegiste: {}</h1>".format(name.upper())
+#  return "<h1>Tu elegiste: {}</h1>".format(name.upper())
 @app.route('/<string:name>/<string:id>')
 def est(name,id):
     acceso=claves()
